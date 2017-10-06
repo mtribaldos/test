@@ -1,0 +1,12 @@
+
+nginx:
+    image: redis
+
+django:
+    image: django
+    links:
+     - redis
+
+redis:
+    image: redis
+
